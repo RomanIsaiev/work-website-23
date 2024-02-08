@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-LIGHT.TTF);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-BOOK.TTF);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-MEDIUM.TTF);
+  font-weight: 450;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-DEMI.TTF);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-HEAVY.TTF);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-BOLD.TTF);
+  font-weight: 700;
+}
+
 body {
   margin: 0;
 }
@@ -34,9 +70,6 @@ p {
 }
 
 /* HEADER */
-
-.header {
-}
 
 .header-wrapper {
   padding-top: 20px;
@@ -77,43 +110,57 @@ p {
   max-width: 125px;
   width: 100%;
 
-  margin-left: auto;
+  margin-right: auto;
 
-  margin-bottom: 261px;
+  margin-bottom: 232px;
+}
+
+.header-intensive {
+  color: #ffe7b9;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
 }
 
 .header-title {
   color: #fff;
-  font-family: Unbounded;
-  font-size: 36px;
+  font-family: "Futura PT";
+  font-size: 43px;
   font-style: normal;
   font-weight: 500;
-  line-height: 110%; /* 39.6px */
+  line-height: 5%; /* 39.6px */
   text-transform: uppercase;
 
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .header-title span {
-  color: #ffa132;
+  color: #f3353f;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  font-family: Unbounded;
-  font-size: 32px;
+  font-family: "Futura PT";
+  font-size: 66px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .header-description {
   color: #fff;
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 19.2px */
 
-  margin-bottom: 33px;
+  margin-bottom: 20px;
+
+  max-width: 216px;
 }
 
 .buy-button-container {
@@ -132,7 +179,7 @@ p {
 
   padding: 13px;
   border-radius: 60px;
-  background: #ffa132;
+  background: #ffe7b9;
 
   max-width: 280px;
   width: 100%;
@@ -148,7 +195,7 @@ p {
 .header-sale-mark {
   position: absolute;
   top: -38px;
-  right: 20px;
+  right: 10px;
 }
 
 .sale-mark {
@@ -170,7 +217,7 @@ p {
 
 .sale-number {
   position: absolute;
-  top: 41%;
+  top: 50%;
   left: 50%;
 
   display: flex;
@@ -182,7 +229,7 @@ p {
   color: #fff;
 
   color: #fff;
-  font-family: Manrope;
+  font-family: "Futura PT";
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -239,16 +286,20 @@ p {
 }
 
 .bonus-wrapper .bonus-title {
-  color: #fb2357;
+  color: #f3353f;
   text-align: center;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
-  line-height: 120%; /* 24px */
+  line-height: 85%; /* 24px */
   text-transform: uppercase;
 
   margin-bottom: 20px;
+}
+
+.bonus-wrapper .bonus-title span {
+  font-size: 12px;
 }
 
 .bonus-wrapper .bonuses-list {
@@ -256,7 +307,7 @@ p {
   flex-direction: column;
   gap: 15px;
   margin: 0;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .bonus-wrapper .bonuses-list .list-item {
@@ -318,7 +369,7 @@ p {
 }
 
 .timer-text {
-  color: #ffa132;
+  color: #ffe7b9;
   text-align: center;
   font-family: Manrope;
   font-size: 14px;
@@ -355,50 +406,60 @@ p {
 
 .border-title {
   color: #fb2357;
-  font-family: Unbounded;
+  font-family: "Futura PT";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 142.857% */
   text-transform: uppercase;
-
-  margin-bottom: 20px;
 }
 
-.border-title span {
+.border-text-one {
   color: #101010;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 16.8px */
+
+  margin-bottom: 10px;
 }
 
-.border-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.border-list .list-item {
+.border-text-two {
   color: #101010;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+  line-height: 120%; /* 16.8px */
+
+  margin-bottom: 10px;
+}
+
+.border-text-three {
+  color: #111;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
   line-height: 120%;
 }
 
-.border-list .list-item span {
-  font-weight: 800;
+.border-text-three span {
+  color: #f3353f;
 }
 
 .sect-one-title {
   color: #101010;
   text-align: center;
-  font-family: Unbounded;
+  font-family: "Futura PT";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 28.8px */
   text-transform: uppercase;
 
-  max-width: 203px;
+  max-width: 254px;
   margin-left: auto;
   margin-right: auto;
 
@@ -406,7 +467,7 @@ p {
 }
 
 .sect-one-title span {
-  color: #ffa132;
+  color: #f3353f;
   font-size: 36px;
 }
 
@@ -414,12 +475,14 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  margin-bottom: 80px;
 }
 
 .sect-one-list .list-item {
   padding: 20px;
   border-radius: 20px;
-  background: #ffa132;
+  background: #ffe7b9;
 }
 
 .sect-one-list .list-item .item-title {
@@ -429,6 +492,8 @@ p {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+
+  max-width: 247px;
 }
 
 .sect-one-list .list-item .item-text {
@@ -438,6 +503,24 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 18.2px */
+
+  max-width: 247px;
+}
+
+.border-text-one-two {
+  color: #101010;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+
+  max-width: 250px;
+}
+
+.border-text-one-two span {
+  font-weight: 700;
 }
 
 /* SECTION-TWO */
@@ -466,11 +549,11 @@ p {
 .sect-two-title {
   color: #fff;
   text-align: center;
-  font-family: Unbounded;
-  font-size: 24px;
+  font-family: "Futura PT";
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 28.8px */
+  line-height: 100%; /* 28.8px */
   text-transform: uppercase;
 
   max-width: 182px;
@@ -481,10 +564,7 @@ p {
 }
 
 .sect-two-title span {
-  color: #ffa132;
-}
-
-.author-image-container {
+  color: #f3353f;
 }
 
 .author-image {
@@ -493,9 +573,6 @@ p {
   margin-right: auto;
 
   margin-bottom: 20px;
-}
-
-.about-author-container {
 }
 
 .author-name {
@@ -548,7 +625,39 @@ p {
 }
 
 .about-author-text {
-  color: #ffa132;
+  color: #f3353f;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+
+  max-width: 276px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 5px;
+}
+
+.about-author-text-one {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 15px;
+}
+
+.about-author-text-two {
+  color: #ffe7b9;
   text-align: center;
   font-family: Manrope;
   font-size: 14px;
@@ -556,45 +665,9 @@ p {
   font-weight: 600;
   line-height: 120%; /* 16.8px */
 
-  max-width: 176px;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
-
-  margin-bottom: 10px;
-}
-
-.author-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.author-list .list-item {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 10px;
-
-  color: #fff;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 16.8px */
-
-  max-width: 277px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.author-list .list-item::before {
-  content: "•";
-  display: block;
-  margin-left: 0;
-
-  font-size: 22px;
-
-  color: #ffa132;
 }
 
 /* SECTION-THREE */
@@ -607,11 +680,11 @@ p {
 .sect-three-title {
   color: #101010;
   text-align: center;
-  font-family: Unbounded;
-  font-size: 24px;
+  font-family: "Futura PT";
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 28.8px */
+  line-height: 100%; /* 28.8px */
   text-transform: uppercase;
 
   max-width: 202px;
@@ -622,30 +695,55 @@ p {
 }
 
 .sect-three-title span {
-  color: #ffa132;
+  color: #f3353f;
+}
+
+.wrapper-intensive {
+  padding: 30px 30px;
+  border-radius: 20px;
+  background: #ffcdd0;
+
+  margin-bottom: 60px;
+}
+
+.wrapper-intensive-title {
+  color: #f3353f;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70%; /* 36px */
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.wrapper-intensive-title span {
+  color: #101010;
+  font-family: "Futura PT";
+  font-size: 26px;
+}
+
+.wrapper-intensive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper-intensive-list .list-item {
+  color: #101010;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
 }
 
 /* faq-01 */
 
 .faq {
-  margin-bottom: 0;
-}
-
-.faq::after {
-  content: "";
-  display: block;
-
-  width: 120px;
-  height: 2px;
-
-  background: linear-gradient(
-    270deg,
-    rgba(255, 161, 50, 0) 0.5%,
-    #ffa132 53.62%,
-    rgba(255, 161, 50, 0) 100.5%
-  );
-
-  margin: 40px auto;
+  margin-bottom: 30px;
 }
 
 .isOpen .content {
@@ -663,7 +761,7 @@ p {
   margin-bottom: 10px;
 
   border-radius: 20px;
-  background: #ffbb6b;
+  background: #fddfe1;
   backdrop-filter: blur(2px);
 
   cursor: pointer;
@@ -714,6 +812,10 @@ p {
   max-width: 250px;
 }
 
+.content p {
+  padding: 20px 0 0 0;
+}
+
 .question-plus {
   transform: rotate(0);
 
@@ -726,24 +828,20 @@ p {
 /* CE VSE ZA CINOY */
 
 .wrapper-all {
-  border-radius: 20px;
-  border: 1px solid #fb2357;
   background: #fff;
 
-  padding: 30px 20px;
+  padding: 30px 20px 0 20px;
 
   max-width: 320px;
 
   margin-left: auto;
   margin-right: auto;
-
-  margin-bottom: 20px;
 }
 
 .wrapper-all .wrapper-title {
   color: #fb2357;
   text-align: center;
-  font-family: Unbounded;
+  font-family: "Futura PT";
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -783,7 +881,7 @@ p {
 }
 
 .old-price {
-  color: #fb2357;
+  color: #dac8a3;
   text-align: center;
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
   font-family: Manrope;
@@ -794,25 +892,17 @@ p {
 
   text-decoration: line-through;
   text-decoration-color: black;
-
-  margin-bottom: 10px;
 }
 
-.price-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.price-list .list-item {
+.new-price {
   color: #101010;
   text-align: center;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
   font-family: Manrope;
-  font-size: 12px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+  line-height: 115%; /* 46px */
 }
 
 .price-list .list-item span {
@@ -828,6 +918,8 @@ p {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .price-description span {
@@ -836,6 +928,7 @@ p {
 }
 
 .second-buy-button {
+  display: block;
   color: #fff;
   text-align: center;
   font-family: Manrope;
@@ -850,72 +943,15 @@ p {
 
   padding: 14px;
 
-  max-width: 320px;
+  max-width: 280px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   border: none;
   cursor: pointer;
-}
 
-/* header-sale-mark-pink */
-
-.yellow-sale-mark {
-  position: absolute;
-  top: -38px;
-  right: 0;
-}
-
-.sale-mark {
-  position: relative;
-
-  animation: spin 2s linear infinite;
-  animation-duration: 10s;
-}
-
-.rotate {
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.sale-number {
-  position: absolute;
-  top: 41%;
-  left: 50%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  transform: translate(-50%, -50%);
-
-  color: #fff;
-
-  color: #fff;
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 30%;
-  text-transform: uppercase;
-}
-
-.sale-number span {
-  color: #fff;
-  font-family: Manrope;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: normal;
-  text-transform: lowercase;
-}
-
-.margin-bottom-30 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* timer-two */
@@ -934,7 +970,7 @@ p {
   display: block;
   color: #101010;
   text-align: center;
-  font-family: Unbounded;
+  font-family: "Futura PT";
   font-size: 28px;
   font-style: normal;
   font-weight: 300;
@@ -985,10 +1021,11 @@ p {
   font-weight: 700;
 }
 
-/* section-four */
-
-.section-four {
+.section-three .timer-text {
+  color: #e4a7aa;
 }
+
+/* section-four */
 
 .section-four .background-container {
   padding-top: 60px;
@@ -1011,6 +1048,32 @@ p {
   }
 }
 
+.four-five-title-one {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 26px */
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
+.four-five-title-one .span-one {
+  color: #f3353f;
+}
+
+.four-five-title-one .span-two {
+  color: #f3353f;
+  font-size: 36px;
+}
+
+.four-five-title-one .span-three {
+  font-size: 36px;
+}
+
 .four-wrapper {
   position: relative;
   padding: 30px 25px;
@@ -1024,6 +1087,8 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  margin-bottom: 80px;
 }
 
 .four-wrapper-laptop {
@@ -1035,7 +1100,7 @@ p {
 .four-wrapper .wrapper-title {
   color: #fff;
   text-align: center;
-  font-family: Unbounded;
+  font-family: "Futura PT";
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -1113,6 +1178,79 @@ p {
   text-transform: uppercase;
 }
 
+.reviews-container {
+  margin-bottom: 80px;
+}
+
+.review-title {
+  color: #ffe7b9;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 43.2px */
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+/* swiper */
+
+.swiper {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 320px;
+}
+
+.review-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picture-container {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ffe7b9;
+}
+
+.swiper-pagination {
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.9);
+}
+
+/* question-container */
+
+.question-container {
+}
+
+.question-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 36px */
+  text-transform: uppercase;
+
+  max-width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 30px;
+}
+
+.question-title span {
+  color: #f3353f;
+}
+
 /* section-five */
 
 .section-five {
@@ -1146,7 +1284,7 @@ p {
 }
 
 .five-list {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .five-list .list-item {
@@ -1159,8 +1297,8 @@ p {
   line-height: normal;
 
   border-radius: 20px;
-  border: 2px solid #ffbb6b;
-  background: #ffbb6b;
+  border: 2px solid #ffe7b9;
+  background: #ffe7b9;
 
   padding: 30px 30px;
 }
@@ -1173,6 +1311,32 @@ p {
 .five-list-decoration-line-two {
   display: block;
   margin-left: 230px;
+}
+
+.under-five-list-text {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 80px;
+}
+
+.under-five-list-text span {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* motivation-con */
@@ -1303,6 +1467,10 @@ p {
 
 /* faq-02 */
 
+.faq-two {
+  margin-bottom: 100px;
+}
+
 .isOpen .content-two {
   display: block;
 }
@@ -1330,7 +1498,7 @@ p {
   bottom: 0;
   border-radius: 20px;
   border: 1px solid transparent;
-  background: linear-gradient(180deg, #ffa132, rgba(255, 187, 107, 0.05))
+  background: linear-gradient(180deg, #ffe7b9, rgba(255, 187, 107, 0.05))
     border-box;
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
