@@ -105,7 +105,7 @@ p {
   padding: 5px;
 
   border-radius: 30px;
-  border: 1px solid #fb2357;
+  border: 1px solid #f3353f;
 
   max-width: 125px;
   width: 100%;
@@ -507,22 +507,6 @@ p {
   max-width: 247px;
 }
 
-.border-text-one-two {
-  color: #101010;
-  text-align: center;
-  font-family: Manrope;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-
-  max-width: 250px;
-}
-
-.border-text-one-two span {
-  font-weight: 700;
-}
-
 /* SECTION-TWO */
 
 .section-two .background-container {
@@ -905,10 +889,6 @@ p {
   line-height: 115%; /* 46px */
 }
 
-.price-list .list-item span {
-  font-weight: 700;
-}
-
 .price-description {
   color: #696969;
   text-align: center;
@@ -1226,9 +1206,6 @@ p {
 }
 
 /* question-container */
-
-.question-container {
-}
 
 .question-title {
   color: #fff;
