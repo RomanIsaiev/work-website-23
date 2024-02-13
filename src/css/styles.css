@@ -188,6 +188,8 @@ p {
   cursor: pointer;
 
   margin-bottom: 60px;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 /* header-sale-mark-pink */
@@ -946,6 +948,8 @@ p {
   cursor: pointer;
 
   margin-bottom: 20px;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 /* timer-two */
@@ -1716,8 +1720,6 @@ body.show-modal .modal {
 
   transform: scale(1);
   transition: transform 200ms ease-in-out;
-
-  overflow: scroll;
 }
 
 .modal-close-button {
@@ -1726,4 +1728,20 @@ body.show-modal .modal {
   right: 30px;
   background: none;
   border: none;
+
+  cursor: pointer;
+}
+
+/* button animation */
+
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.08;
+  }
+  100% {
+    scale: 1;
+  }
 }
