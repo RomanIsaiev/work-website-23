@@ -168,6 +168,7 @@ p {
 }
 
 .header-button {
+  display: block;
   color: #101010;
   text-align: center;
   font-family: Manrope;
@@ -176,6 +177,8 @@ p {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+
+  border: none;
 
   padding: 13px;
   border-radius: 60px;
@@ -839,7 +842,7 @@ p {
 }
 
 .wrapper-all .wrapper-title {
-  color: #fb2357;
+  color: #f3353f;
   text-align: center;
   font-family: "Futura PT";
   font-size: 40px;
@@ -935,7 +938,7 @@ p {
   text-transform: uppercase;
 
   border-radius: 60px;
-  background: #fb2357;
+  background: #f3353f;
 
   padding: 14px;
 
@@ -1744,4 +1747,16 @@ body.show-modal .modal {
   100% {
     scale: 1;
   }
+}
+
+.form-text {
+  margin-top: 40px;
+
+  color: var(--white, #101010);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
